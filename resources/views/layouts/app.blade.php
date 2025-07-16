@@ -21,13 +21,16 @@
         <!-- main @s -->
         <div class="nk-main ">
             <!-- sidebar @s -->
+            @auth
             @include('layouts.sidebar')
+            @endauth
             <!-- sidebar @e -->
             <!-- wrap @s -->
             <div class="nk-wrap ">
                 <!-- main header @s -->
                 <div class="nk-header nk-header-fixed is-light">
                     <div class="container-fluid">
+                        @auth
                         <div class="nk-header-wrap">
                             <div class="nk-menu-trigger d-xl-none ml-n1">
                                 <a href="#" class="nk-nav-toggle nk-quick-nav-icon" data-target="sidebarMenu"><em class="icon ni ni-menu"></em></a>
@@ -202,6 +205,7 @@
                                 </ul><!-- .nk-quick-nav -->
                             </div><!-- .nk-header-tools -->
                         </div><!-- .nk-header-wrap -->
+                        @endauth
                     </div><!-- .container-fliud -->
                 </div>
                 <!-- main header @e -->
@@ -210,6 +214,7 @@
                     <div class="container-fluid">
                         <div class="nk-content-inner">
                             <div class="nk-content-body">
+                                @section('content')
                                 <div class="nk-block-head nk-block-head-sm">
                                     <div class="nk-block-between">
                                         <div class="nk-block-head-content">
@@ -859,6 +864,7 @@
                                         </div><!-- .col -->
                                     </div><!-- .row -->
                                 </div><!-- .nk-block -->
+                                @show
                             </div>
                         </div>
                     </div>
