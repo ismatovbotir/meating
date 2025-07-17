@@ -31,7 +31,7 @@
                                 <a href="html/project-card.html" class="nk-menu-link"><span class="nk-menu-text">Новый Магазин</span></a>
                             </li>
                             <li class="nk-menu-item">
-                                <a href="html/project-list.html" class="nk-menu-link"><span class="nk-menu-text">Спимок Магазинов</span></a>
+                                <a href="{{route('admin.shop.index')}}" class="nk-menu-link"><span class="nk-menu-text">Спимок Магазинов</span></a>
                             </li>
                         </ul><!-- .nk-menu-sub -->
                     </li><!-- .nk-menu-item -->
