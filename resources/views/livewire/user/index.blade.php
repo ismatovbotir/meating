@@ -8,18 +8,20 @@
       <tr>
         <th scope="col">#</th>
         <th scope="col">Name</th>
-        <th scope="col">Users</th>
-        <th scope="col">total</th>
+        <th scope="col">email</th>
+        <th scope="col">role</th>
+        <th scope="col">shop</th>
         
       </tr>
     </thead>
     <tbody>
-      @foreach($shops as $idx=>$shop)
+      @foreach($users as $idx=>$user)
         <tr>
         <th scope="row">{{$idx+1}}</th>
-        <td>{{$shop->name}}</td>
-        <td>{{$shop->users_count}}</td>
-        <td>5 000</td>
+        <td>{{$user->name}}</td>
+        <td>{{$user->email}}</td>
+        <td>{{$user->role}}</td>
+        <td>{{$user->shop}}</td>
       </tr>
       @endforeach
       

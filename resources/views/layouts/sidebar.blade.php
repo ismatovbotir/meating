@@ -27,9 +27,7 @@
                             <span class="nk-menu-text">Магазины</span>
                         </a>
                         <ul class="nk-menu-sub">
-                            <li class="nk-menu-item">
-                                <a href="html/project-card.html" class="nk-menu-link"><span class="nk-menu-text">Новый Магазин</span></a>
-                            </li>
+                            
                             <li class="nk-menu-item">
                                 <a href="{{route('admin.shop.index')}}" class="nk-menu-link"><span class="nk-menu-text">Спимок Магазинов</span></a>
                             </li>
@@ -42,7 +40,7 @@
                         </a>
                         <ul class="nk-menu-sub">
                             <li class="nk-menu-item">
-                                <a href="html/user-list-regular.html" class="nk-menu-link"><span class="nk-menu-text">Список Пользователей</span></a>
+                                <a href="{{route('admin.user.index')}}" class="nk-menu-link"><span class="nk-menu-text">Список Пользователей</span></a>
                             </li>
                            
                         </ul><!-- .nk-menu-sub -->

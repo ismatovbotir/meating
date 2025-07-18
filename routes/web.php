@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\ShopController;
+use App\Http\Controllers\Admin\UserController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -26,5 +27,6 @@ Route::group(['middleware'=>'auth','as'=>'admin.','prefix'=>'admin'],function(){
         });
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
     Route::resource('/shop',ShopController::class);
+    Route::resource('/user',UserController::class);
 
 });
